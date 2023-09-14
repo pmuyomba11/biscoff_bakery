@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+</head>
+<body>
+    <h1>HomePage</h1>
+    <nav class="container">
+        <ul>
+            <% for(let i = 0; i < allProducts.length; i++){%>
+                <li><a href="products/<%= i; %>"><%= allProducts[i].name %></a></li>
+                
+                <%} %>
+        </ul>
+    </nav>
+    <nav>
+        <a href="/products/new">Create New Entity</a>
+    </nav>
+</body>
+</html>
